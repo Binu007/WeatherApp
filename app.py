@@ -1,6 +1,7 @@
 
 
 from flask import Flask,render_template,request
+from flask import jsonify
 import requests,time
 
 
@@ -17,7 +18,7 @@ def weather_info():
             response = requests.get(api)
           
      
-            data = response.json()
+            data = return jsonify(**response.json())
             temp = round(data['main']['temp'] - 273.15)
             pressure = data['main']['pressure']
             humidity= data['main']['humidity']
