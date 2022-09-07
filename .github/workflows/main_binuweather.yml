@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'Binuweather'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6089A6487CE1427CB467FFD0B1FE7463 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_8B46680046F044D6913CA5B294C61363 }}
